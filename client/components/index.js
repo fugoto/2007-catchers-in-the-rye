@@ -20,7 +20,7 @@ import CheckoutForm from './Payment/CheckoutForm';
 import PaymentSuccess from './Payment/PaymentSuccess';
 import LandingPage from './LandingPage';
 
-// const stripePromise = loadStripe(process.env.STRIPE_PUBLIC_KEY);
+// publishable key
 const stripePromise = loadStripe('pk_test_51Hj94RFSm62mRLAhb5em7vKTTRm9V6zoY3mvXE2tSlpdSPIMhW5lFXqwFgoCb3mPeCoWQJLqMqImtV65kktYaO8d00s0YJmJjb');
 
 class Routes extends Component {

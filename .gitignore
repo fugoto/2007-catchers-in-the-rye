@@ -1,6 +1,9 @@
 # Ignore all node_modules
 node_modules/*
 
+# env
+.env
+
 # Compiled JS
 server/public/bundle.js
 server/public/bundle.js.map
