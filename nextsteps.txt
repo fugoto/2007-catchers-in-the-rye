@@ -1,4 +1,3 @@
-make pictures centered on page, and pics above the info?
-fix when highlighting a costume, the others move
+start with styling info for costume detail page
 search bar up top
 https://abracadabranyc.com/collections/costumes

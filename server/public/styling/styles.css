@@ -137,7 +137,7 @@ body, html{
   
   .detailView {
     display: flex;
-    float: left;
+    /* float: left; */
     background-color: rgb(256, 256, 256);
     list-style-type: none;
     justify-content: space-evenly;
@@ -145,7 +145,7 @@ body, html{
     border-color: black;
     border-style: solid;
     width: 400px;
-    height: 320px;
+    /* height: 320px; */
     margin: 10px;
     border-radius: 10px;
     padding: 10px;
@@ -202,6 +202,14 @@ body, html{
     flex-direction: column;
     padding: 10px;
     align-items: center;
+  }
+
+  .detailView .details {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-around;
   }
 
   .costume-name {

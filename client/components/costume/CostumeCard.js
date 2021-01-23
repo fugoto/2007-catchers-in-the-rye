@@ -7,19 +7,19 @@ function Costume (props) {
         costume, view, user 
     } = props
     return (
-        <div className={view === "detailed" ? "costume detailView" : "costume"} role="listitem">
+        <div className={view === "detailed" ? "detailView" : "costume"} role="listitem">
             <div>
                 <img src={costume.imageUrl} />
             </div>
             <div className="details">
-            <div className="costume-name">
-            {
-                view !== "detailed" ?
-                    <Link to={`/costumes/${costume.costumeName}/${costume.id}`}>{costume.costumeName}</Link>
-                    :
-                    costume.costumeName
-            }
-            </div>
+                <div className="costume-name">
+                {
+                    view !== "detailed" ?
+                        <Link to={`/costumes/${costume.costumeName}/${costume.id}`}>{costume.costumeName}</Link>
+                        :
+                        costume.costumeName
+                }
+                </div>
                 <div>
                     <span className="old-price">${(costume.price / (1 - costume.discount)).toFixed(2)}</span>
                     <span className="new-price">  ${costume.price}</span>
