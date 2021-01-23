@@ -1,6 +1,6 @@
-/* html {
-  background-color: rgb(136, 30, 228);
-} */
+* {
+    font-family: 'Henny Penny', cursive;
+}
 
 body, html{
   background-image: url("/costumeImages/pattern2.jpg")
@@ -153,22 +153,22 @@ body, html{
 
   .costume {
     display: flex;
+    flex-direction: column;
     float: left;
     background-color: rgb(256, 256, 256);
     list-style-type: none;
-    justify-content: space-evenly;
+    justify-content: space-between;
     border-width: 2px;
     border-color: black;
     border-style: solid;
-    width: 400px;
-    height: 320px;
+    width: 30%;
     margin: 10px;
     border-radius: 10px;
     padding: 10px;
+    align-items: center;
   }
 
   .costume:hover {
-    border-width: 5px;
     border-color: rgb(133, 226, 31);
   }
 
@@ -197,10 +197,11 @@ body, html{
     border-color: black;
   }
 
-  .costume.details {
+  .costume .details {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    align-items: center;
   }
 
   .costume-name {
@@ -225,14 +226,14 @@ body, html{
     text-decoration: line-through;
   }
 
-  .costume a:link, .costume a:visited, .costumesList a:link, .costumesList a:visited {
+  /* .costume a:link, .costume a:visited, .costumesList a:link, .costumesList a:visited {
     height: 100%;
     width: 100%;
     padding: 5px;
     background-color: rgb(249, 193, 14);
     border-radius: 10px;
     color: rgb(256, 256, 256);
-  }
+  } */
 
   .costume a:hover, .costume a:active, .costumesList a:hover, .costumesList a:active {
     background-color: rgb(255, 154, 0);
@@ -284,6 +285,7 @@ body, html{
   .add-subtract button.subtract:focus, .add-subtract button.subtract:hover {
     background-color: rgb(256, 256, 256);
     color: red;
+  }
 
   .CheckoutHeader {
     text-align: center;
